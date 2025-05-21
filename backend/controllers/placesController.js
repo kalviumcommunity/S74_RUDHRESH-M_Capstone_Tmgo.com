@@ -23,4 +23,28 @@ const createPlace = async (req, res) => {
   }
 };
 
-module.exports = { getPlaces, createPlace };
+
+// PUT - Update Place by ID
+const updatePlace = async (req, res) => {
+  const { id } = req.params;
+  const { name, description, location } = req.body;
+
+  try {
+    const updatedPlace = await Place.findByIdAndUpdate(
+      id,
+      { name, description, location },
+      { new: true }
+    );
+
+    if (!updatedPlace) {
+      return res.status(404).json({ message: 'Place not found' });
+    }
+
+    res.status(200).json(updatedPlace);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+};
+
+
+module.exports = { getPlaces, createPlace, updatePlace};
