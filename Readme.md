@@ -63,3 +63,7 @@ TmGo aims to empower local tourism while promoting sustainable travel by connect
 ## 🚀 Deployment
 - Frontend: [Netlify]
 - Backend: [Render]
+
+
+5.	Backend Deployment link:
+https://s74-rudhresh-m-capstone-tmgo-com-2.onrender.com
