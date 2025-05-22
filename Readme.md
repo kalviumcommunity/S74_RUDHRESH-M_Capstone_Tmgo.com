@@ -67,3 +67,6 @@ TmGo aims to empower local tourism while promoting sustainable travel by connect
 
 5.	Backend Deployment link:
 https://s74-rudhresh-m-capstone-tmgo-com-2.onrender.com
+
+6. Frontend Deployment link:
+https://playful-gelato-9cb431.netlify.app/
