@@ -1,6 +1,6 @@
 const Place = require('../models/Place');
 
-// GET All Places (Already exists)
+// GET  - All Places (Already exists)
 const getPlaces = async (req, res) => {
   try {
     const places = await Place.find();
